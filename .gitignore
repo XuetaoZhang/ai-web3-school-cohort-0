@@ -1,0 +1,86 @@
+# AI × Web3 School - .gitignore
+
+# Privacy & Security / 隐私与安全
+# DO NOT commit sensitive information / 不要提交敏感信息
+*.env
+*.env.local
+*.env.*.local
+.env.*
+secrets/
+credentials/
+keys/
+*.key
+*.pem
+*.p12
+*.pfx
+wallet.json
+mnemonic.txt
+private-keys/
+
+# API Keys & Tokens / API 密钥和令牌
+**/api-keys.json
+**/tokens.json
+**/secrets.json
+
+# Personal Information / 个人信息
+personal-notes/
+private/
+
+# IDE & Editor / 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Dependencies / 依赖
+node_modules/
+venv/
+env/
+__pycache__/
+*.pyc
+.Python
+
+# Build outputs / 构建输出
+dist/
+build/
+*.egg-info/
+.next/
+out/
+
+# Logs / 日志
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing / 测试
+coverage/
+.nyc_output/
+.pytest_cache/
+
+# Temporary files / 临时文件
+tmp/
+temp/
+*.tmp
+*.bak
+*.backup
+
+# OS files / 操作系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Contract artifacts (if needed, commit selectively) / 合约产物
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Keep these directories but ignore their contents initially
+# 保留这些目录但初始忽略其内容
+!experiments/.gitkeep
+!hackathon/.gitkeep
+!submissions/.gitkeep
