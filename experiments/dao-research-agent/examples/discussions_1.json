@@ -1,0 +1,37 @@
+[
+  {
+    "author": "Charlie",
+    "timestamp": "2026-05-16 10:30",
+    "content": "强烈支持这个提案！DeFi 教育对于行业发展至关重要。我看过团队之前的工作，质量很高。",
+    "sentiment": "positive",
+    "votes": 45
+  },
+  {
+    "author": "David",
+    "timestamp": "2026-05-16 14:20",
+    "content": "我有一些担忧：1) 50,000 USDC 是否过高？2) 团队是否有足够的 track record？3) 如何衡量项目成功？",
+    "sentiment": "neutral",
+    "votes": 32
+  },
+  {
+    "author": "Eve",
+    "timestamp": "2026-05-17 09:15",
+    "content": "反对。预算不够透明，没有看到详细的成本分解。建议团队提供更详细的预算表。",
+    "sentiment": "negative",
+    "votes": 28
+  },
+  {
+    "author": "Alice",
+    "timestamp": "2026-05-17 16:45",
+    "content": "感谢反馈！我们会在下周提供详细的预算分解表。关于 track record，我们团队之前完成了 XYZ 项目（链接）。",
+    "sentiment": "neutral",
+    "votes": 50
+  },
+  {
+    "author": "Frank",
+    "timestamp": "2026-05-18 11:00",
+    "content": "支持，但建议分阶段拨款。先拨 20,000 完成第一阶段，验证后再拨剩余资金。",
+    "sentiment": "positive",
+    "votes": 67
+  }
+]

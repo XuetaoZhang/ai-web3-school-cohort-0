@@ -1,0 +1,16 @@
+{
+  "id": "123",
+  "title": "提案：为 DeFi 教育项目拨款 50,000 USDC",
+  "description": "申请 50,000 USDC 用于开发一个面向新手的 DeFi 教育平台。\n\n## 项目目标\n1. 创建 20 个交互式教程\n2. 开发模拟交易环境\n3. 建立社区问答系统\n\n## 资金使用计划\n- 开发成本：30,000 USDC\n- 内容创作：15,000 USDC\n- 运营费用：5,000 USDC\n\n## 时间线\n- 第 1-2 月：平台开发\n- 第 3-4 月：内容创作\n- 第 5-6 月：测试和优化",
+  "proposer": "0x1234...5678",
+  "proposer_name": "Alice (DeFi Educator)",
+  "status": "active",
+  "created_at": "2026-05-15",
+  "voting_start": "2026-05-18",
+  "voting_end": "2026-05-25",
+  "votes_for": 1200000,
+  "votes_against": 300000,
+  "quorum": 1000000,
+  "category": "funding",
+  "requested_amount": "50,000 USDC"
+}
