@@ -1,0 +1,182 @@
+
+============================================================
+🧪 Web3 AI Assistant 功能测试
+============================================================
+
+============================================================
+🔍 测试 1: 安全审计
+============================================================
+
+📄 分析合约: vulnerable_contract.sol
+{
+  "total_issues": 5,
+  "issues": [
+    {
+      "type": "tx.origin 使用",
+      "severity": "中危",
+      "description": "使用 tx.origin 进行身份验证不安全",
+      "suggestion": "使用 msg.sender 代替 tx.origin"
+    },
+    {
+      "type": "未检查的外部调用",
+      "severity": "中危",
+      "description": "外部调用的返回值未检查",
+      "suggestion": "使用 require() 或 if 语句检查调用结果"
+    },
+    {
+      "type": "缺少访问控制",
+      "severity": "高危",
+      "description": "敏感函数缺少访问控制",
+      "suggestion": "添加 onlyOwner 或其他访问控制修饰符"
+    },
+    {
+      "type": "时间戳依赖",
+      "severity": "低危",
+      "description": "依赖 block.timestamp 可能被矿工操纵",
+      "suggestion": "避免在关键逻辑中依赖时间戳，或使用更安全的时间源"
+    },
+    {
+      "type": "潜在整数溢出",
+      "severity": "中危",
+      "description": "Solidity < 0.8.0 不自动检查整数溢出",
+      "suggestion": "升级到 Solidity >= 0.8.0 或使用 SafeMath 库"
+    }
+  ],
+  "summary": "发现 5 个安全问题"
+}
+
+📄 分析合约: safe_contract.sol
+{
+  "total_issues": 2,
+  "issues": [
+    {
+      "type": "tx.origin 使用",
+      "severity": "中危",
+      "description": "使用 tx.origin 进行身份验证不安全",
+      "suggestion": "使用 msg.sender 代替 tx.origin"
+    },
+    {
+      "type": "未检查的外部调用",
+      "severity": "中危",
+      "description": "外部调用的返回值未检查",
+      "suggestion": "使用 require() 或 if 语句检查调用结果"
+    }
+  ],
+  "summary": "发现 2 个安全问题"
+}
+
+============================================================
+🔨 测试 2: 代码生成
+============================================================
+
+📝 生成 erc20 合约
+参数: name=MyToken, symbol=MTK, decimals=18
+{
+  "contract_type": "erc20",
+  "code": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nimport \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\nimport \"@openzeppelin/contracts/access/Ownable.sol\";\n\ncontract MyToken is ERC20, Ownable {\n    constructor() ERC20(\"MyToken\", \"MTK\") {\n        _mint(msg.sender, 1000000 * 10 ** decimals());\n    }\n\n    function mint(address to, uint256 amount) public onlyOwner {\n        _mint(to, amount);\n    }\n\n    function burn(uint256 a...
+[输出已截断]
+
+============================================================
+📖 测试 3: 合约解释
+============================================================
+
+📄 解释合约: safe_contract.sol
+{
+  "contract_name": "SafeContract",
+  "contract_type": "未知",
+  "inheritance": [],
+  "state_variables": [
+    {
+      "type": "address",
+      "visibility": "public",
+      "name": "owner"
+    },
+    {
+      "type": "bool",
+      "visibility": "private",
+      "name": "locked"
+    },
+    {
+      "type": "address",
+      "visibility": "internal",
+      "name": "indexed"
+    },
+    {
+      "type": "uint256",
+      "visibility": "internal",
+      "name": "amount"
+    },
+    {
+      "type": "address",
+      "visibility": "internal",
+      "name": "indexed"
+    }
+  ],
+  "functions": [
+    {
+      "name": "transferOwnership",
+      "visibility": "public"
+    },
+    {
+      "name": "withdraw",
+      "visibility": "public"
+    },
+    {
+      "name": "withdrawAll",
+      "visibility": "public"
+    },
+    {
+      "name": "callExternal",
+      "visibility": "public"
+    },
+    {
+      "name": "deposit",
+      "visibility": "public"
+    },
+    {
+      "name": "getBalance",
+      "visibility": "public"
+    }
+  ],
+  "events": [
+    "Deposit",
+    "Withdrawal",
+    "OwnershipTransferred"
+  ],
+  "modifiers": [
+    "onlyOwner",
+    "nonReentrant"
+  ],
+  "patterns": [
+    "Ownable 模式",
+    "ReentrancyGuard 模式"
+  ]
+}
+
+============================================================
+⚡ 测试 4: Gas 优化
+============================================================
+
+📄 分析合约: vulnerable_contract.sol
+{
+  "total_suggestions": 2,
+  "suggestions": [
+    {
+      "type": "存储优化",
+      "issue": "public 状态变量会自动生成 getter 函数",
+      "suggestion": "如果不需要外部访问，使用 private 或 internal",
+      "gas_saved": "~2000 gas per deployment"
+    },
+    {
+      "type": "函数可见性优化",
+      "issue": "发现 6 个 public 函数",
+      "suggestion": "如果函数只从外部调用，使用 external 代替 public",
+      "gas_saved": "~500 gas per call"
+    }
+  ],
+  "estimated_total_savings": "~1000 gas"
+}
+
+============================================================
+✅ 所有测试完成
+============================================================
