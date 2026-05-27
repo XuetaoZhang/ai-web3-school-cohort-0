@@ -1,0 +1,1 @@
+"""MCP readonly server package."""
