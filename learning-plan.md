@@ -24,79 +24,100 @@ Given your background:
 
 ---
 
-## 📅 Phase 1: AI Fundamentals (Week 1-2) / AI 基础强化
+## 📅 Phase 1: AI Fundamentals (Week 1) / AI 基础强化
 
 ### Week 1: Core Concepts / 核心概念
 
 **Day 1-2: LLM & Prompt**
-- [ ] Read: [LLM](https://aiweb3.school/zh/handbook/ai/llm/)
-- [ ] Read: [Prompt](https://aiweb3.school/zh/handbook/ai/prompt/)
-- [ ] Practice: Write effective prompts for different tasks
-- [ ] Experiment: Test prompt engineering techniques
+- [x] Read: [LLM](https://aiweb3.school/zh/handbook/ai/llm/)
+- [x] Read: [Prompt](https://aiweb3.school/zh/handbook/ai/prompt/)
+- [x] Practice: Write effective prompts for different tasks
+- [x] Experiment: Test prompt engineering techniques
 
 **Day 3-4: Context & RAG**
-- [ ] Read: [Context](https://aiweb3.school/zh/handbook/ai/context/)
-- [ ] Read: [RAG](https://aiweb3.school/zh/handbook/ai/rag/)
-- [ ] Practice: Build a simple RAG system
-- [ ] Experiment: Context window management
+- [x] Read: [Context](https://aiweb3.school/zh/handbook/ai/context/)
+- [x] Read: [RAG](https://aiweb3.school/zh/handbook/ai/rag/)
+- [x] Practice: Build a simple RAG system
+- [x] Experiment: Context window management
 
-**Day 5-7: Agent & Frameworks**
-- [ ] Read: [Agent](https://aiweb3.school/zh/handbook/ai/agent/)
-- [ ] Read: [Frameworks](https://aiweb3.school/zh/handbook/ai/frameworks/)
-- [ ] Read: [MCP](https://aiweb3.school/zh/handbook/ai/mcp/)
-- [ ] Practice: Build a simple agent with tool calling
-
-### Week 2: Advanced AI Topics / 进阶 AI 主题
-
-**Day 8-10: Development & Evaluation**
-- [ ] Read: [Vibe Coding](https://aiweb3.school/zh/handbook/ai/vibe-coding/)
-- [ ] Read: [Evaluation](https://aiweb3.school/zh/handbook/ai/evaluation/)
-- [ ] Practice: AI-assisted development workflow
-- [ ] Experiment: Test and evaluate agent behavior
-
-**Day 11-14: Optional Deep Dive**
-- [ ] Read: [Fine-tuning](https://aiweb3.school/zh/handbook/ai/fine-tuning/)
-- [ ] Read: [Inference](https://aiweb3.school/zh/handbook/ai/inference/)
-- [ ] Review and consolidate AI fundamentals
+**Day 5-6: Agent & Frameworks & MCP**
+- [x] Read: [Agent](https://aiweb3.school/zh/handbook/ai/agent/)
+- [x] Read: [Frameworks](https://aiweb3.school/zh/handbook/ai/frameworks/)
+- [x] Read: [MCP](https://aiweb3.school/zh/handbook/ai/mcp/)
+- [x] Practice: Build agent with tool calling (Frameworks comparison)
+- [x] Practice: Build MCP readonly server
 
 ---
 
-## 📅 Phase 2: AI × Web3 Bridge (Week 3-4) / AI × Web3 桥接
+## 📅 Phase 2: AI Fundamentals + AI × Web3 Bridge (Week 2 - 加速版) / 加速学习
 
-### Week 3: Core Integration / 核心集成
+**策略**: 快速浏览理论 + 重点深入实践核心主题
+**时间**: Day 7-10（4 天，每天 5-6 小时）
 
-**Day 15-16: Chain-aware Context & Tool Use**
-- [ ] Read: [Chain-aware Context](https://aiweb3.school/zh/handbook/bridge/chain-aware-context/)
-- [ ] Read: [Web3 Tool Use](https://aiweb3.school/zh/handbook/bridge/web3-tool-use/)
-- [ ] Practice: Build agent that reads on-chain data
-- [ ] Experiment: RPC calls and blockchain queries
+### Day 7: Chain-aware Context（深入实践）
 
-**Day 17-18: Agent Workflow & Wallet**
-- [ ] Read: [Agent Workflow](https://aiweb3.school/zh/handbook/bridge/agent-workflow/)
-- [ ] Read: [Agent Wallet](https://aiweb3.school/zh/handbook/bridge/agent-wallet/)
-- [ ] Practice: Design human-in-the-loop workflows
-- [ ] Experiment: Agent permission management
+**上午（2 小时）- 快速理论**:
+- [ ] Read: [Vibe Coding](https://aiweb3.school/zh/handbook/ai/vibe-coding/) - 30 分钟
+- [ ] Read: [Evaluation](https://aiweb3.school/zh/handbook/ai/evaluation/) - 30 分钟
+- [ ] Read: [Chain-aware Context](https://aiweb3.school/zh/handbook/bridge/chain-aware-context/) - 1 小时
 
-**Day 19-21: Payment & Settlement**
-- [ ] Read: [Machine Payment](https://aiweb3.school/zh/handbook/bridge/machine-payment/)
-- [ ] Read: [Settlement & Escrow](https://aiweb3.school/zh/handbook/bridge/settlement-and-escrow/)
-- [ ] Practice: Implement micropayment flow
-- [ ] Experiment: Automated settlement logic
+**下午（4 小时）- 深入实践**:
+- [ ] Practice: 设计包含链上数据的 Context 分层
+- [ ] Practice: 扩展 Day 4 的 Context Agent 到 Web3 场景
+- [ ] Practice: 实现链上数据的可信度标注
+- [ ] 总结: 写学习笔记和实践报告
 
-### Week 4: Identity, Trust & Security / 身份、信任与安全
+### Day 8: Web3 Tool Use（深入实践 - 核心！）
 
-**Day 22-24: Identity & Reputation**
-- [ ] Read: [Agent Identity](https://aiweb3.school/zh/handbook/bridge/agent-identity/)
-- [ ] Read: [Agent Trust & Reputation](https://aiweb3.school/zh/handbook/bridge/agent-trust-and-reputation/)
-- [ ] Practice: Design agent identity system
-- [ ] Experiment: Reputation tracking
+**上午（2 小时）- 快速理论**:
+- [ ] Read: [Web3 Tool Use](https://aiweb3.school/zh/handbook/bridge/web3-tool-use/) - 1 小时
+- [ ] Read: [Agent Workflow](https://aiweb3.school/zh/handbook/bridge/agent-workflow/) - 1 小时
 
-**Day 25-28: Security & Privacy**
-- [ ] Read: [AI Security](https://aiweb3.school/zh/handbook/bridge/ai-security/)
-- [ ] Read: [AI Privacy](https://aiweb3.school/zh/handbook/bridge/ai-privacy/)
-- [ ] Read: [Verifiable AI](https://aiweb3.school/zh/handbook/bridge/verifiable-ai/)
-- [ ] Practice: Implement security measures
-- [ ] Review Phase 2 learnings
+**下午（4 小时）- 深入实践**:
+- [ ] Practice: 构建能查询链上数据的 Agent
+- [ ] Practice: 实现 3-4 个 Web3 工具（余额、交易、合约状态）
+- [ ] Practice: 集成真实 RPC 调用
+- [ ] Practice: 测试和验证
+- [ ] 总结: 写学习笔记和实践报告
+
+### Day 9: Agent Workflow（深入实践 - 核心！）
+
+**上午（2 小时）- 快速理论**:
+- [ ] Read: [Agent Wallet](https://aiweb3.school/zh/handbook/bridge/agent-wallet/) - 1 小时
+- [ ] Read: [Machine Payment](https://aiweb3.school/zh/handbook/bridge/machine-payment/) - 30 分钟
+- [ ] Read: [Settlement & Escrow](https://aiweb3.school/zh/handbook/bridge/settlement-and-escrow/) - 30 分钟
+
+**下午（4 小时）- 深入实践**:
+- [ ] Practice: 设计 Human-in-the-loop 交易流程
+- [ ] Practice: 实现用户确认机制
+- [ ] Practice: 测试多个场景（批准、拒绝、超时）
+- [ ] Practice: 设计权限管理方案
+- [ ] 总结: 写学习笔记和实践报告
+
+### Day 10: Security & 总结
+
+**上午（3 小时）- 快速理论**:
+- [ ] Read: [Agent Identity](https://aiweb3.school/zh/handbook/bridge/agent-identity/) - 30 分钟
+- [ ] Read: [Agent Trust & Reputation](https://aiweb3.school/zh/handbook/bridge/agent-trust-and-reputation/) - 30 分钟
+- [ ] Read: [AI Security](https://aiweb3.school/zh/handbook/bridge/ai-security/) - 1 小时
+- [ ] Read: [AI Privacy](https://aiweb3.school/zh/handbook/bridge/ai-privacy/) - 30 分钟
+- [ ] Read: [Verifiable AI](https://aiweb3.school/zh/handbook/bridge/verifiable-ai/) - 30 分钟
+
+**下午（3 小时）- 选做实践 + 总结**:
+- [ ] 选做实践（2 小时）:
+  - 选项 A: Agent Wallet 权限管理实践
+  - 选项 B: AI Security（Prompt Injection 检测）
+- [ ] Week 2 总结（1 小时）:
+  - 整理学习笔记
+  - 写打卡总结
+  - 规划 Week 3
+
+**Week 2 核心成果**:
+- ✅ 理解 AI × Web3 的核心概念
+- ✅ 掌握 Web3 Tool Use（最重要）
+- ✅ 掌握 Agent Workflow（最重要）
+- ✅ 理解 Chain-aware Context
+- ✅ 了解 Security、Privacy、Identity 等进阶主题
 
 ---
 
